@@ -9,7 +9,10 @@ input[type=message], input[type=email], input[type=password], input[type=text], 
   font-size: 16px;
   margin: 8px 0;
   padding: 12px;
-  width: 100%;
+  width: 90%;
+  caret-color: #4CAF50;
+  caret-shape: bar;
+  color: #000000;
 }
 
 button[type=submit] {
