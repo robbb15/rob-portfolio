@@ -9,7 +9,7 @@ input[type=message], input[type=email], input[type=password], input[type=text], 
   font-size: 16px;
   margin: 8px 0;
   padding: 12px;
-  width: 90%;
+  width: 100%;
   caret-color: #4CAF50;
   caret-shape: bar;
   color: #000000;
@@ -31,3 +31,60 @@ button[type=submit]:hover {
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
+
+/* Prevent layout from shifting on zoom */
+/* Fix zoom behavior */
+* {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Fix element positions on browser zoom */
+.main .block-container {
+    max-width: 1200px !important;
+    min-width: 1200px !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    overflow-y: auto !important;
+    height: 100vh !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.main .block-container {
+    max-width: 1200px;
+    min-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Progress bar styling */
+.stProgress > div > div > div > div {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    height: 15px !important;
+}
+
+.stProgress > div > div > div {
+    background-color: #0485f6;
+    border-radius: 10px;
+    height: 15px !important;
+}
+
+.stProgress {
+    margin-bottom: 15px;
+}
+
+/* Circular profile picture */
+div[data-testid="stImage"] img {
+    border-radius: 50% !important;
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: auto !important;
+}
