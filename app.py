@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
-from streamlit_extras.let_it_rain import rain
 
 # ---- PAGE CONFIG ---- #
 st.set_page_config(page_title="Rob's Portfolio", page_icon=":spider:", layout="wide")
